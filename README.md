@@ -1,1 +1,33 @@
-# box-hub-Create
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Box Hub", colors)
+local Tab = Window:NewTab("game")
+local Section = Tab:NewSection("game")
+Section:NewButton("Box Hub", " ", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/What432/script/main/Blox%20Hub%20x"))();
+end)
+Section:NewButton("Blox Fruit", " ", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/kill55547/TAWAN_HUB/main/TAWANxHUB_V2.lua.txt', true))()
+end)
+Section:NewButton("Olympia", " ", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/xtrey10x/xtrey10x-hub/main/Olympia"))()
+end)
+local Tab = Window:NewTab("CreateScript")
+local Section = Tab:NewSection("CreateScript")
+Section:NewButton("tp tool", " ", function()
+    mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "Equip to Click TP"
+tool.Activated:connect(function()
+local pos = mouse.Hit+Vector3.new(0,2.5,0)
+pos = CFrame.new(pos.X,pos.Y,pos.Z)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+end)
+Section:NewButton("admin commands", "", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+Section:NewButton("darkdex", " ", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
+end)
