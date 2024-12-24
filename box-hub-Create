@@ -6,10 +6,11 @@ Section:NewButton("Box Hub", " ", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/What432/script/main/Blox%20Hub%20x"))();
 end)
 Section:NewButton("Fisch", " ", function()
-    loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/RimuraHub/MAP/main/AllMAP"))()
+    script_key="PasteKeyHere";
+(loadstring or load)(game:HttpGet("https://raw.githubusercontent.com/Native-lab/Native/main/loader.lua"))()
 end)
 Section:NewButton("Moodeng Fruit", " ", function()
-    loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/RimuraHub/MAP/main/AllMAP"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RimuraHub/MAP/main/AllMAP"))()
 end)
 local Tab = Window:NewTab("CreateScript")
 local Section = Tab:NewSection("CreateScript")
